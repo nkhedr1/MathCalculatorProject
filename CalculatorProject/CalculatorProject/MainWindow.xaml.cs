@@ -43,6 +43,7 @@ namespace CalculatorProject
             currentFormula = 1.ToString();
             fullFormula = String.Concat(currentFormula, fullFormula);
             OutputWindow.Text = fullFormula;
+            Calculation(fullFormula);
 
         }
 
@@ -124,9 +125,30 @@ namespace CalculatorProject
             OutputWindow.Text = fullFormula;
         }
 
+        private void Button_Click_Divide(object sender, RoutedEventArgs e)
+        {
+            currentFormula = "/";
+            fullFormula = String.Concat(currentFormula, fullFormula);
+            OutputWindow.Text = fullFormula;
+        }
+
+        private void Button_Click_Multiply(object sender, RoutedEventArgs e)
+        {
+            currentFormula = "*";
+            fullFormula = String.Concat(currentFormula, fullFormula);
+            OutputWindow.Text = fullFormula;
+        }
+
         private void Button_Click_Equal(object sender, RoutedEventArgs e)
         {
             Calculation(fullFormula);
+        }
+
+        private void Button_Click_Clear(object sender, RoutedEventArgs e)
+        {
+            fullFormula = "";
+            currentFormula = 0.ToString();
+            OutputWindow.Text = currentFormula;
         }
 
         private void Calculation(string fullFormula)
