@@ -42,6 +42,7 @@
             <Button x:Name="ButtonSquareRoot" Content="SqrRoot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="198,168,0,0" Click="Button_Click_SquareRoot" Grid.Row="1" FontSize="10"/>
             <Button x:Name="ButtonPower" Content="Powr" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="198,21,0,0" Click="Button_Click_Power" Grid.Row="1"/>
             <Button x:Name="ButtonFactorial" Content="n!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="245,21,0,0" Grid.Row="1" Click="Button_Click_Factorial"/>
+            <Button x:Name="ButtonHexadecimal" Content="Hex" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="245,70,0,0" Click="Button_Click_Hexadicimal" Grid.Row="1"/>
 
         </Grid>
     </Border>

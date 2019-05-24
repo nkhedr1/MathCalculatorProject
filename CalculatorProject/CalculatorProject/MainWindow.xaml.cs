@@ -182,6 +182,13 @@ namespace CalculatorProject
             power = true;
         }
 
+        private void Button_Click_Hexadicimal(object sender, RoutedEventArgs e)
+        {
+            int input = Int32.Parse(fullFormula);            
+            fullFormula = Convert.ToString(input, 16);
+            OutputWindow.Text = fullFormula;
+        }
+
         private void Button_Click_Factorial(object sender, RoutedEventArgs e)
         {
             decimal baseNumber = Int32.Parse(fullFormula);
@@ -195,6 +202,8 @@ namespace CalculatorProject
 
             Calculation(fullFormula);
         }
+
+
 
         private void Button_Click_Clear(object sender, RoutedEventArgs e)
         {
