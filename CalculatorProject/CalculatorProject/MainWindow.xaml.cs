@@ -189,6 +189,28 @@ namespace CalculatorProject
             OutputWindow.Text = fullFormula;
         }
 
+        private void Button_Click_Octal(object sender, RoutedEventArgs e)
+        {
+            int input = Int32.Parse(fullFormula);
+            fullFormula = Convert.ToString(input, 8);
+            OutputWindow.Text = fullFormula;
+        }
+
+        private void Button_Click_Binary(object sender, RoutedEventArgs e)
+        {
+            int input = Int32.Parse(fullFormula);
+              string binVal = Convert.ToString(input, 2);
+            int bits = 0;
+            int bitblock = 4;
+
+            for (int i = 0; i < binVal.Length; i = i + bitblock)
+            { bits += bitblock; }
+
+            fullFormula =  binVal.PadLeft(bits, '0');
+
+            OutputWindow.Text = fullFormula;
+        }
+
         private void Button_Click_Factorial(object sender, RoutedEventArgs e)
         {
             decimal baseNumber = Int32.Parse(fullFormula);

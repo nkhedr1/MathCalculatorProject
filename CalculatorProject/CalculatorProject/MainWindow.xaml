@@ -43,6 +43,8 @@
             <Button x:Name="ButtonPower" Content="Powr" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="198,21,0,0" Click="Button_Click_Power" Grid.Row="1"/>
             <Button x:Name="ButtonFactorial" Content="n!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="245,21,0,0" Grid.Row="1" Click="Button_Click_Factorial"/>
             <Button x:Name="ButtonHexadecimal" Content="Hex" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="245,70,0,0" Click="Button_Click_Hexadicimal" Grid.Row="1"/>
+            <Button x:Name="ButtonOctal" Content="Oct" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="245,119,0,0" Click="Button_Click_Octal" Grid.Row="1" RenderTransformOrigin="0.526,1.922"/>
+            <Button x:Name="ButtonBinary" Content="Binary" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="245,168,0,0" Click="Button_Click_Binary" Grid.Row="1" RenderTransformOrigin="0.526,1.922"/>
 
         </Grid>
     </Border>
