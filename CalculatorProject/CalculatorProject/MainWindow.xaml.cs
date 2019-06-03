@@ -225,7 +225,21 @@ namespace CalculatorProject
             Calculation(fullFormula);
         }
 
+        private void Button_Click_Celcius(object sender, RoutedEventArgs e)
+        {
+            int fehrenhiut = Int32.Parse(fullFormula);
+            fullFormula = Convert.ToString((fehrenhiut - 32) * 5 / 9);
+            OutputWindow.Text = fullFormula;
 
+        }
+
+        private void Button_Click_Fahrenheit(object sender, RoutedEventArgs e)
+        {
+            int celsius = Int32.Parse(fullFormula);
+            fullFormula = Convert.ToString((celsius * 9) / 5 + 32);
+            OutputWindow.Text = fullFormula;
+
+        }
 
         private void Button_Click_Clear(object sender, RoutedEventArgs e)
         {
