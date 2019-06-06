@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -238,6 +239,45 @@ namespace CalculatorProject
             int celsius = Int32.Parse(fullFormula);
             fullFormula = Convert.ToString((celsius * 9) / 5 + 32);
             OutputWindow.Text = fullFormula;
+
+        }
+
+        private void Button_Click_ToPercent(object sender, RoutedEventArgs e)
+        {
+            decimal baseNumber = System.Convert.ToDecimal(fullFormula);
+            var final = baseNumber.ToString("P", CultureInfo.InvariantCulture);
+            fullFormula = final.ToString();
+            OutputWindow.Text = fullFormula;
+        }
+
+        private void Button_Click_ToDecimal(object sender, RoutedEventArgs e)
+        {
+            var decimalNum = decimal.Parse(fullFormula.TrimEnd(new char[] { '%', ' ' })) / 100M;
+          
+            Calculation(decimalNum.ToString());
+        }
+
+        private void Button_Click_FromMilligram(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var gram = currentNum / 1000;
+            var gramString = String.Concat(gram, " Grams, ");
+            var finalFormula = gramString;
+
+            var kilograms = gram / 1000;
+            var kiloGramString = String.Concat(kilograms, " Kilo Grams, ");
+            finalFormula = String.Concat(finalFormula, kiloGramString);
+
+            var ounce = currentNum / 28349.523;
+            var ounceString = String.Concat(ounce, " Ounces, ");
+            finalFormula = String.Concat(finalFormula, ounceString);
+
+            var pound = currentNum / 453592.37;
+            var poundString = String.Concat(pound, " Pounds");
+            finalFormula = String.Concat(finalFormula, poundString);
+
+            OutputWindow.Text = finalFormula;
 
         }
 
