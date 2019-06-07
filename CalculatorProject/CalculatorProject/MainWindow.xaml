@@ -10,7 +10,7 @@
 
     </Window.Resources>
     <Border>
-        <Grid Margin="-10,25,10,-25">
+        <Grid Margin="-44,71,28,-110">
             <Grid.RowDefinitions>
                 <RowDefinition Height="58*"/>
                 <RowDefinition Height="373*"/>
@@ -31,7 +31,7 @@
             <Button x:Name="Button9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="115,87,0,0" Grid.Row="1" Click="Button_Click_9"/>
             <Button x:Name="Button0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="1" Margin="0,20,0,0" Grid.Row="1" Click="Button_Click_0" Grid.ColumnSpan="2"/>
             <Button x:Name="ButtonAdd" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="50,21,0,0" Grid.Row="1" Click="Button_Click_Add"/>
-            <TextBlock x:Name="OutputWindow" Grid.Column="2" HorizontalAlignment="Left" Margin="4,-1,-33,0" TextWrapping="Wrap" Text="{Binding CurrentResult}" VerticalAlignment="Top" Height="74" Width="591" Grid.RowSpan="2"/>
+            <TextBlock x:Name="OutputWindow" Grid.Column="2" HorizontalAlignment="Left" Margin="10,-57,-25,0" TextWrapping="Wrap" Text="{Binding CurrentResult}" VerticalAlignment="Top" Height="74" Width="591"/>
             <Button x:Name="ButtonEqual" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="115,20,0,0" Grid.Row="1" Click="Button_Click_Equal"/>
             <Button x:Name="ButtonSubtract" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="180,20,0,0" Click="Button_Click_Subtract" Grid.Row="1"/>
             <Button x:Name="ButtonDivide" Content="/" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="180,152,0,0" Click="Button_Click_Divide" RenderTransformOrigin="0.771,-0.823" Grid.Row="1"/>
@@ -59,6 +59,15 @@
             <Button x:Name="ButtonFromMeters" Content="Meters" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="505,216,-3,0" Click="Button_Click_FromMeters" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
             <Button x:Name="ButtonFromKiloMeters" Content="Kilometers" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="505,281,-3,0" Click="Button_Click_FromKilometers" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
             <Button x:Name="ButtonFromInches" Content="Inch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="440,281,0,0" Click="Button_Click_FromInches" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromFeet" Content="Foot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="375,281,0,0" Click="Button_Click_FromFeet" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromByte" Content="Byte" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="310,281,0,0" Click="Button_Click_FromByte" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromKilobyte" Content="Kilobyte" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="245,281,0,0" Click="Button_Click_FromKilobyte" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromMega" Content="Megabyte" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="180,281,0,0" Click="Button_Click_FromMegabyte" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromGigabytes" Content="Gegabyte" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="115,281,0,0" Click="Button_Click_FromGigabyte" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromTerabytes" Content="Terabyte" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="50,281,0,0" Click="Button_Click_FromTerabyte" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromSeconds" Content="Second" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="1" Margin="0,280,0,0" Click="Button_Click_FromSeconds" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874" Grid.ColumnSpan="2"/>
+            <Button x:Name="ButtonFromHours" Content="Hours" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="52,345,0,0" Click="Button_Click_FromHours" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromMinutes" Content="Minutes" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="1" Margin="0,345,0,0" Click="Button_Click_FromMinutes" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874" Grid.ColumnSpan="2"/>
 
         </Grid>
     </Border>

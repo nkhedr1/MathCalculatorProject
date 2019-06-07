@@ -517,6 +517,201 @@ namespace CalculatorProject
 
         }
 
+        private void Button_Click_FromFeet(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var millimeters = currentNum * 304.8;
+            var MellimetersString = String.Concat(millimeters, " Mellimeters, ");
+            var finalFormula = MellimetersString;
+
+            var centimeters = currentNum * 30.48;
+            var centimetersString = String.Concat(centimeters, " Centimeters, ");
+            finalFormula = String.Concat(finalFormula, centimetersString);
+
+            var meters = currentNum / 3.281;
+            var metersString = String.Concat(meters, " Meters, ");
+            finalFormula = String.Concat(finalFormula, metersString);
+
+            var kilometers = currentNum / 3280.84;
+            var kmString = String.Concat(kilometers, " Kilometers, ");
+            finalFormula = String.Concat(finalFormula, kmString);
+
+            var inch = currentNum * 12;
+            var inchString = String.Concat(inch, " Inches");
+            finalFormula = String.Concat(finalFormula, inchString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromByte(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var kilobytes = currentNum / 1000;
+            var kilobytesString = String.Concat(kilobytes, " kilobytes, ");
+            var finalFormula = kilobytesString;
+
+            var megabytes = currentNum / 1e+6;
+            var megabytesString = String.Concat(megabytes, " megabytes, ");
+            finalFormula = String.Concat(finalFormula, megabytesString);
+
+            var gigabytes = currentNum / 1e+9;
+            var gigabytesString = String.Concat(gigabytes, " gigabytes , ");
+            finalFormula = String.Concat(finalFormula, gigabytesString);
+
+            var terabytes = currentNum / 1e+12;
+            var terabytesString = String.Concat(terabytes, " terabytes, ");
+            finalFormula = String.Concat(finalFormula, terabytesString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromKilobyte(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var bytes = currentNum * 1000;
+            var bytesString = String.Concat(bytes, " bytes, ");
+            var finalFormula = bytesString;
+
+            var megabytes = currentNum / 1000;
+            var megabytesString = String.Concat(megabytes, " megabytes, ");
+            finalFormula = String.Concat(finalFormula, megabytesString);
+
+            var gigabytes = currentNum / 1e+6;
+            var gigabytesString = String.Concat(gigabytes, " gigabytes , ");
+            finalFormula = String.Concat(finalFormula, gigabytesString);
+
+            var terabytes = currentNum / 1e+9;
+            var terabytesString = String.Concat(terabytes, " terabytes, ");
+            finalFormula = String.Concat(finalFormula, terabytesString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromMegabyte(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var bytes = currentNum * 1e+6;
+            var bytesString = String.Concat(bytes, " bytes, ");
+            var finalFormula = bytesString;
+
+            var kilobytes = currentNum * 1000;
+            var kilobytesString = String.Concat(kilobytes, " kilobytes, ");
+            finalFormula = String.Concat(finalFormula, kilobytesString);
+
+            var gigabytes = currentNum / 1000;
+            var gigabytesString = String.Concat(gigabytes, " gigabytes , ");
+            finalFormula = String.Concat(finalFormula, gigabytesString);
+
+            var terabytes = currentNum / 1e+6;
+            var terabytesString = String.Concat(terabytes, " terabytes, ");
+            finalFormula = String.Concat(finalFormula, terabytesString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromGigabyte(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var bytes = currentNum / 1e+9;
+            var bytesString = String.Concat(bytes, " bytes, ");
+            var finalFormula = bytesString;
+
+            var kilobytes = currentNum * 1e+6;
+            var kilobytesString = String.Concat(kilobytes, " kilobytes, ");
+            finalFormula = String.Concat(finalFormula, kilobytesString);
+
+            var megabytes = currentNum * 1000;
+            var megabytesString = String.Concat(megabytes, " megabytes , ");
+            finalFormula = String.Concat(finalFormula, megabytesString);
+
+            var terabytes = currentNum / 1000;
+            var terabytesString = String.Concat(terabytes, " terabytes, ");
+            finalFormula = String.Concat(finalFormula, terabytesString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromTerabyte(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var bytes = currentNum / 1e+12;
+            var bytesString = String.Concat(bytes, " bytes, ");
+            var finalFormula = bytesString;
+
+            var kilobytes = currentNum * 1e+9;
+            var kilobytesString = String.Concat(kilobytes, " kilobytes, ");
+            finalFormula = String.Concat(finalFormula, kilobytesString);
+
+            var megabytes = currentNum * 1e+6;
+            var megabytesString = String.Concat(megabytes, " megabytes , ");
+            finalFormula = String.Concat(finalFormula, megabytesString);
+
+            var gigabytes = currentNum * 1000;
+            var gigabytesString = String.Concat(gigabytes, " gigabytes , ");
+            finalFormula = String.Concat(finalFormula, gigabytesString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromSeconds(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var hours = currentNum / 3600;
+            var hoursString = String.Concat(hours, " hours, ");
+            var finalFormula = hoursString;
+
+            var minutes = currentNum / 60;
+            var minutesString = String.Concat(minutes, " minutes , ");
+            finalFormula = String.Concat(finalFormula, minutesString);       
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromMinutes(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var hours = currentNum / 60;
+            var hoursString = String.Concat(hours, " hours, ");
+            var finalFormula = hoursString;
+
+            var seconds = currentNum * 60;
+            var secondsString = String.Concat(seconds, " seconds , ");
+            finalFormula = String.Concat(finalFormula, secondsString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+        private void Button_Click_FromHours(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var minutes = currentNum * 60;
+            var minutesString = String.Concat(minutes, " minutes, ");
+            var finalFormula = minutesString;
+
+            var seconds = currentNum * 3600;
+            var secondsString = String.Concat(seconds, " seconds , ");
+            finalFormula = String.Concat(finalFormula, secondsString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
         private void Button_Click_Clear(object sender, RoutedEventArgs e)
         {
             fullFormula = "";
