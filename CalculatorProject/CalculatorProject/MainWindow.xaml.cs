@@ -281,6 +281,242 @@ namespace CalculatorProject
 
         }
 
+        private void Button_Click_FromGram(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var milliGram = currentNum * 1000;
+            var milliGramString = String.Concat(milliGram, " Milligrams, ");
+            var finalFormula = milliGramString;
+
+            var kilograms = currentNum / 1000;
+            var kiloGramString = String.Concat(kilograms, " Kilo Grams, ");
+            finalFormula = String.Concat(finalFormula, kiloGramString);
+
+            var ounce = currentNum / 28.35;
+            var ounceString = String.Concat(ounce, " Ounces, ");
+            finalFormula = String.Concat(finalFormula, ounceString);
+
+            var pound = currentNum / 453.592;
+            var poundString = String.Concat(pound, " Pounds");
+            finalFormula = String.Concat(finalFormula, poundString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromKilogram(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var milliGram = currentNum * 1e+6;
+            var milliGramString = String.Concat(milliGram, " Milligrams, ");
+            var finalFormula = milliGramString;
+
+            var grams = currentNum * 1000;
+            var gramString = String.Concat(grams, " grams, ");
+            finalFormula = String.Concat(finalFormula, gramString);
+
+            var ounce = currentNum * 35.274;
+            var ounceString = String.Concat(ounce, " Ounces, ");
+            finalFormula = String.Concat(finalFormula, ounceString);
+
+            var pound = currentNum * 2.205;
+            var poundString = String.Concat(pound, " Pounds");
+            finalFormula = String.Concat(finalFormula, poundString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromOunce(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var milliGram = currentNum * 28349.523;
+            var milliGramString = String.Concat(milliGram, " Milligrams, ");
+            var finalFormula = milliGramString;
+
+            var grams = currentNum * 28.35;
+            var gramString = String.Concat(grams, " Grams, ");
+            finalFormula = String.Concat(finalFormula, gramString);
+
+            var kiloGram = currentNum / 35.274;
+            var kiloGramString = String.Concat(kiloGram, " Kilo Grams, ");
+            finalFormula = String.Concat(finalFormula, kiloGramString);
+
+            var pound = currentNum / 16;
+            var poundString = String.Concat(pound, " Pounds");
+            finalFormula = String.Concat(finalFormula, poundString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromPound(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var milliGram = currentNum * 453592.37;
+            var milliGramString = String.Concat(milliGram, " Milligrams, ");
+            var finalFormula = milliGramString;
+
+            var grams = currentNum * 453.592;
+            var gramString = String.Concat(grams, " Grams, ");
+            finalFormula = String.Concat(finalFormula, gramString);
+
+            var kiloGram = currentNum / 2.205;
+            var kiloGramString = String.Concat(kiloGram, " Kilo Grams, ");
+            finalFormula = String.Concat(finalFormula, kiloGramString);
+
+            var ounce = currentNum * 16;
+            var ounceString = String.Concat(ounce, " Ounces");
+            finalFormula = String.Concat(finalFormula, ounce);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromMillimetres(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var centimeters = currentNum / 10;
+            var centiMetersString = String.Concat(centimeters, " Centimeters, ");
+            var finalFormula = centiMetersString;
+
+            var meters = currentNum / 1000;
+            var metersString = String.Concat(meters, " Meters, ");
+            finalFormula = String.Concat(finalFormula, metersString);
+
+            var kilometers = currentNum / 1e+6;
+            var kiloMetersString = String.Concat(kilometers, " Kilometers, ");
+            finalFormula = String.Concat(finalFormula, kiloMetersString);
+
+            var inches = currentNum / 25.4;
+            var inchString = String.Concat(inches, " Inches, ");
+            finalFormula = String.Concat(finalFormula, inchString);
+
+            var feet = currentNum / 304.8;
+            var feetString = String.Concat(feet, " Feet");
+            finalFormula = String.Concat(finalFormula, feetString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromCentimeters(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var millimeters = currentNum * 10;
+            var MellimetersString = String.Concat(millimeters, " Mellimeters, ");
+            var finalFormula = MellimetersString;
+
+            var meters = currentNum / 100;
+            var metersString = String.Concat(meters, " Meters, ");
+            finalFormula = String.Concat(finalFormula, metersString);
+
+            var kilometers = currentNum / 100000;
+            var kiloMetersString = String.Concat(kilometers, " Kilometers, ");
+            finalFormula = String.Concat(finalFormula, kiloMetersString);
+
+            var inches = currentNum / 2.54;
+            var inchString = String.Concat(inches, " Inches, ");
+            finalFormula = String.Concat(finalFormula, inchString);
+
+            var feet = currentNum / 30.48;
+            var feetString = String.Concat(feet, " Feet");
+            finalFormula = String.Concat(finalFormula, feetString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromMeters(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var millimeters = currentNum * 1000;
+            var MellimetersString = String.Concat(millimeters, " Mellimeters, ");
+            var finalFormula = MellimetersString;
+
+            var centimeters = currentNum * 100;
+            var centimetersString = String.Concat(centimeters, " Centimeters, ");
+            finalFormula = String.Concat(finalFormula, centimetersString);
+
+            var kilometers = currentNum / 1000;
+            var kiloMetersString = String.Concat(kilometers, " Kilometers, ");
+            finalFormula = String.Concat(finalFormula, kiloMetersString);
+
+            var inches = currentNum * 39.37;
+            var inchString = String.Concat(inches, " Inches, ");
+            finalFormula = String.Concat(finalFormula, inchString);
+
+            var feet = currentNum * 3.281;
+            var feetString = String.Concat(feet, " Feet");
+            finalFormula = String.Concat(finalFormula, feetString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromKilometers(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var millimeters = currentNum * 1e+6;
+            var MellimetersString = String.Concat(millimeters, " Mellimeters, ");
+            var finalFormula = MellimetersString;
+
+            var centimeters = currentNum * 100000;
+            var centimetersString = String.Concat(centimeters, " Centimeters, ");
+            finalFormula = String.Concat(finalFormula, centimetersString);
+
+            var meters = currentNum * 1000;
+            var metersString = String.Concat(meters, " Meters, ");
+            finalFormula = String.Concat(finalFormula, metersString);
+
+            var inches = currentNum * 39370.079;
+            var inchString = String.Concat(inches, " Inches, ");
+            finalFormula = String.Concat(finalFormula, inchString);
+
+            var feet = currentNum * 3280.84;
+            var feetString = String.Concat(feet, " Feet");
+            finalFormula = String.Concat(finalFormula, feetString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
+        private void Button_Click_FromInches(object sender, RoutedEventArgs e)
+        {
+            double currentNum = System.Convert.ToDouble(fullFormula);
+
+            var millimeters = currentNum * 25.4;
+            var MellimetersString = String.Concat(millimeters, " Mellimeters, ");
+            var finalFormula = MellimetersString;
+
+            var centimeters = currentNum * 2.54;
+            var centimetersString = String.Concat(centimeters, " Centimeters, ");
+            finalFormula = String.Concat(finalFormula, centimetersString);
+
+            var meters = currentNum / 39.37;
+            var metersString = String.Concat(meters, " Meters, ");
+            finalFormula = String.Concat(finalFormula, metersString);
+
+            var kilometers = currentNum / 39370.079;
+            var kmString = String.Concat(kilometers, " Kilometers, ");
+            finalFormula = String.Concat(finalFormula, kmString);
+
+            var feet = currentNum / 12;
+            var feetString = String.Concat(feet, " Feet");
+            finalFormula = String.Concat(finalFormula, feetString);
+
+            OutputWindow.Text = finalFormula;
+
+        }
+
         private void Button_Click_Clear(object sender, RoutedEventArgs e)
         {
             fullFormula = "";

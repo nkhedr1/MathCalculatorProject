@@ -16,40 +16,49 @@
                 <RowDefinition Height="373*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="90*"/>
-                <ColumnDefinition Width="51*"/>
-                <ColumnDefinition Width="481*"/>
+                <ColumnDefinition Width="47*"/>
+                <ColumnDefinition Width="13*"/>
+                <ColumnDefinition Width="562*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="Button1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="10,168,0,0" Grid.Row="1" Click="Button_Click_1"/>
-            <Button x:Name="Button2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="57,168,0,0" Grid.Row="1" Click="Button_Click_2"/>
-            <Button x:Name="Button3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="104,168,0,0" Grid.Row="1" Click="Button_Click_3"/>
-            <Button x:Name="Button4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="10,119,0,0" Grid.Row="1" Click="Button_Click_4"/>
-            <Button x:Name="Button5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="57,119,0,0" Grid.Row="1" Click="Button_Click_5"/>
-            <Button x:Name="Button6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="104,119,0,0" Grid.Row="1" Click="Button_Click_6"/>
-            <Button x:Name="Button8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="57,70,0,0" Grid.Row="1" Click="Button_Click_8"/>
-            <Button x:Name="Button7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="10,70,0,0" Grid.Row="1" Click="Button_Click_7"/>
-            <Button x:Name="Button9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="104,70,0,0" Grid.Row="1" Click="Button_Click_9"/>
-            <Button x:Name="Button0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="10,21,0,0" Grid.Row="1" Click="Button_Click_0"/>
-            <Button x:Name="ButtonAdd" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="57,21,0,0" Grid.Row="1" Click="Button_Click_Add"/>
-            <TextBlock x:Name="OutputWindow" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding CurrentResult}" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="74" Width="500" Grid.RowSpan="2"/>
-            <Button x:Name="ButtonEqual" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="104,21,0,0" Grid.Row="1" Click="Button_Click_Equal"/>
-            <Button x:Name="ButtonSubtract" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="151,21,0,0" Click="Button_Click_Subtract" Grid.Row="1"/>
-            <Button x:Name="ButtonDivide" Content="/" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="151,119,0,0" Click="Button_Click_Divide" RenderTransformOrigin="0.771,-0.823" Grid.Row="1"/>
-            <Button x:Name="ButtonMultiply" Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="151,70,0,0" Click="Button_Click_Multiply" RenderTransformOrigin="0.771,-0.823" Grid.Row="1"/>
-            <Button x:Name="ButtonClear" Content="C" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="151,168,0,0" Click="Button_Click_Clear" Grid.Row="1"/>
-            <Button x:Name="ButtonDecimal" Content="." HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="198,70,0,0" Grid.Row="1" Click="Button_Click_Decimal"/>
-            <Button x:Name="ButtonMod" Content="Mod" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="198,119,0,0" Click="Button_Click_Mod" RenderTransformOrigin="0.771,-0.823" Grid.Row="1"/>
-            <Button x:Name="ButtonSquareRoot" Content="SqrRoot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="198,168,0,0" Click="Button_Click_SquareRoot" Grid.Row="1" FontSize="10"/>
-            <Button x:Name="ButtonPower" Content="Powr" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="198,21,0,0" Click="Button_Click_Power" Grid.Row="1"/>
-            <Button x:Name="ButtonFactorial" Content="n!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="245,21,0,0" Grid.Row="1" Click="Button_Click_Factorial"/>
-            <Button x:Name="ButtonHexadecimal" Content="Hex" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="245,70,0,0" Click="Button_Click_Hexadicimal" Grid.Row="1"/>
-            <Button x:Name="ButtonOctal" Content="Oct" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="245,119,0,0" Click="Button_Click_Octal" Grid.Row="1" RenderTransformOrigin="0.526,1.922"/>
-            <Button x:Name="ButtonBinary" Content="Binary" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="245,168,0,0" Click="Button_Click_Binary" Grid.Row="1" RenderTransformOrigin="0.526,1.922"/>
-            <Button x:Name="ButtonCelcius" Content="Celcius" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="292,70,0,0" Click="Button_Click_Celcius" Grid.Row="1"/>
-            <Button x:Name="ButtonFahrenheit" Content="Fahrenheit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="292,119,0,0" Click="Button_Click_Fahrenheit" Grid.Row="1" FontSize="11"/>
-            <Button x:Name="ButtonToPercent" Content="%" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="292,168,0,0" Click="Button_Click_ToPercent" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
-            <Button x:Name="ButtonToDecimal" Content="Decimal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="339,168,0,0" Click="Button_Click_ToDecimal" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
-            <Button x:Name="ButtonFromMilligram" Content="MilliGram" HorizontalAlignment="Left" VerticalAlignment="Top" Width="42" Height="44" Grid.Column="2" Margin="339,119,0,0" Click="Button_Click_FromMilligram" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="Button1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="1" Margin="0,215,0,0" Grid.Row="1" Click="Button_Click_1" Grid.ColumnSpan="2"/>
+            <Button x:Name="Button2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="50,215,0,0" Grid.Row="1" Click="Button_Click_2"/>
+            <Button x:Name="Button3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="115,216,0,0" Grid.Row="1" Click="Button_Click_3"/>
+            <Button x:Name="Button4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="1" Margin="0,152,0,0" Grid.Row="1" Click="Button_Click_4" Grid.ColumnSpan="2"/>
+            <Button x:Name="Button5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="50,152,0,0" Grid.Row="1" Click="Button_Click_5"/>
+            <Button x:Name="Button6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="115,152,0,0" Grid.Row="1" Click="Button_Click_6"/>
+            <Button x:Name="Button8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="50,87,0,0" Grid.Row="1" Click="Button_Click_8"/>
+            <Button x:Name="Button7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="1" Margin="0,87,0,0" Grid.Row="1" Click="Button_Click_7" Grid.ColumnSpan="2"/>
+            <Button x:Name="Button9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="115,87,0,0" Grid.Row="1" Click="Button_Click_9"/>
+            <Button x:Name="Button0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="1" Margin="0,20,0,0" Grid.Row="1" Click="Button_Click_0" Grid.ColumnSpan="2"/>
+            <Button x:Name="ButtonAdd" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="50,21,0,0" Grid.Row="1" Click="Button_Click_Add"/>
+            <TextBlock x:Name="OutputWindow" Grid.Column="2" HorizontalAlignment="Left" Margin="4,-1,-33,0" TextWrapping="Wrap" Text="{Binding CurrentResult}" VerticalAlignment="Top" Height="74" Width="591" Grid.RowSpan="2"/>
+            <Button x:Name="ButtonEqual" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="115,20,0,0" Grid.Row="1" Click="Button_Click_Equal"/>
+            <Button x:Name="ButtonSubtract" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="180,20,0,0" Click="Button_Click_Subtract" Grid.Row="1"/>
+            <Button x:Name="ButtonDivide" Content="/" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="180,152,0,0" Click="Button_Click_Divide" RenderTransformOrigin="0.771,-0.823" Grid.Row="1"/>
+            <Button x:Name="ButtonMultiply" Content="*" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="180,86,0,0" Click="Button_Click_Multiply" RenderTransformOrigin="0.771,-0.823" Grid.Row="1"/>
+            <Button x:Name="ButtonClear" Content="C" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="180,216,0,0" Click="Button_Click_Clear" Grid.Row="1"/>
+            <Button x:Name="ButtonDecimal" Content="." HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="245,87,0,0" Grid.Row="1" Click="Button_Click_Decimal"/>
+            <Button x:Name="ButtonMod" Content="Mod" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="245,151,0,0" Click="Button_Click_Mod" RenderTransformOrigin="0.771,-0.823" Grid.Row="1"/>
+            <Button x:Name="ButtonSquareRoot" Content="SqrRoot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="245,216,0,0" Click="Button_Click_SquareRoot" Grid.Row="1" FontSize="10"/>
+            <Button x:Name="ButtonPower" Content="Powr" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="245,21,0,0" Click="Button_Click_Power" Grid.Row="1"/>
+            <Button x:Name="ButtonFactorial" Content="n!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="310,21,0,0" Grid.Row="1" Click="Button_Click_Factorial"/>
+            <Button x:Name="ButtonHexadecimal" Content="Hex" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="310,86,0,0" Click="Button_Click_Hexadicimal" Grid.Row="1"/>
+            <Button x:Name="ButtonOctal" Content="Oct" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="310,151,0,0" Click="Button_Click_Octal" Grid.Row="1" RenderTransformOrigin="0.526,1.922"/>
+            <Button x:Name="ButtonBinary" Content="Binary" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="310,216,0,0" Click="Button_Click_Binary" Grid.Row="1" RenderTransformOrigin="0.526,1.922"/>
+            <Button x:Name="ButtonCelcius" Content="Celcius" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="375,86,0,0" Click="Button_Click_Celcius" Grid.Row="1"/>
+            <Button x:Name="ButtonFahrenheit" Content="Fahrenheit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="375,151,0,0" Click="Button_Click_Fahrenheit" Grid.Row="1" FontSize="11"/>
+            <Button x:Name="ButtonToPercent" Content="%" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="375,216,0,0" Click="Button_Click_ToPercent" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonToDecimal" Content="Decimal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="440,216,0,0" Click="Button_Click_ToDecimal" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromMilligram" Content="MilliGram" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="440,151,0,0" Click="Button_Click_FromMilligram" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromGram" Content="Gram" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="440,86,0,0" Click="Button_Click_FromGram" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromKiloGram" Content="Kilogram" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="375,21,0,0" Click="Button_Click_FromKilogram" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromOunce" Content="Ounce" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="440,21,0,0" Click="Button_Click_FromOunce" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromPound" Content="Pound" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="505,20,-3,0" Click="Button_Click_FromPound" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromMillimeter" Content="Millimeter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="505,87,-3,0" Click="Button_Click_FromMillimetres" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromCentimeters" Content="CentiMeters" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="505,152,-3,0" Click="Button_Click_FromCentimeters" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromMeters" Content="Meters" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="505,216,-3,0" Click="Button_Click_FromMeters" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromKiloMeters" Content="Kilometers" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="505,281,-3,0" Click="Button_Click_FromKilometers" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
+            <Button x:Name="ButtonFromInches" Content="Inch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="60" Grid.Column="2" Margin="440,281,0,0" Click="Button_Click_FromInches" Grid.Row="1" FontSize="11" RenderTransformOrigin="0.647,1.874"/>
 
         </Grid>
     </Border>
